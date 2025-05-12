@@ -1,0 +1,10 @@
+.customContainer{
+    width: 310px !important;
+}
+
+@media screen and (min-width:768px) {
+ .customCard{
+   height: 450px !important;
+}
+    
+}
