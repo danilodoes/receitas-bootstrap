@@ -88,9 +88,6 @@ Sugestões e melhorias são sempre bem-vindas! Fique à vontade para abrir uma i
 ---
 
 ## 📫 Contato
-- [Acesse aqui](https://linkedin.com/in/danilodoes)  
-<img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+<img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" /> [Acesse aqui](https://linkedin.com/in/danilodoes)
     
-
-
 ---
