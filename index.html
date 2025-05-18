@@ -1,3 +1,9 @@
+<!--    
+
+Próximas implementações:
+    - Fazer o JS operar a troca de ingredientes e modo de preparo, para não poluir a tela com tanto HTML estático
+-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,6 +23,22 @@
 
     <div class="container-1 d-flex flex-wrap gap-2 justify-content-around">
 
+        <!-- 
+            Utilizei essa estrutura para cada card e seu modal:
+
+            <div class="modal fade" id="x" tabindex="-1">
+                Aqui, todo o conteúdo do modal. Onde conta com um accordion dentro dele.
+            </div>
+
+            <div class="cointainer customContainer">
+                Aqui, todo conteudo do card!
+            </div>
+
+            Sendo assim, a arquitetura do código segue um padrão de "modal e em baixo o seu respectivo card" 
+        -->
+
+
+        <!-- Início modal + card Salmão -->
         <div class="modal fade" id="modalSalmao" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
@@ -30,11 +52,11 @@
                             <div class="accordion-item">
                                 <h3 class="accordion-hearder">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#item1">
+                                        data-bs-target="#ingredientesSalmao">
                                         Ingredientes
                                     </button>
                                 </h3>
-                                <div id="item1" class="accordion-body accordion-collapse collapse show"
+                                <div id="ingredientesSalmao" class="accordion-body accordion-collapse collapse show"
                                     data-bs-parent="#receitaSalmao">
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
                                         nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
@@ -46,11 +68,11 @@
                             <div class="accordion-item">
                                 <h3 class="accordion-hearder">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#item2">
+                                        data-bs-target="#preparoSalmao">
                                         Modo de Preparo
                                     </button>
                                 </h3>
-                                <div id="item2" class="accordion-body accordion-collapse collapse">
+                                <div id="preparoSalmao" class="accordion-body accordion-collapse collapse">
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
                                         nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
                                         aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
@@ -90,7 +112,71 @@
                 </div>
             </div>
         </div>
+        <!-- Fim modal + card Salmão -->
 
+
+        <!-- Início modal + card Pizza de Margherita -->
+        <div class="modal fade" id="modalPizzaMargherita" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Pizza de Margherita</h4>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="accordion" id="receitaPizzaMargherita">
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-hearder">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ingredientesPizzaMargherita">
+                                        Ingredientes
+                                    </button>
+                                </h3>
+                                <div id="ingredientesPizzaMargherita"
+                                    class="accordion-body accordion-collapse collapse show"
+                                    data-bs-parent="#receitaPizzaMargherita">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-hearder">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#preparoPizzaMargherita">
+                                        Modo de Preparo
+                                    </button>
+                                </h3>
+                                <div id="preparoPizzaMargherita" class="accordion-body accordion-collapse collapse"
+                                    data-bs-parent="#receitaPizzaMargherita">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Amei a receita!</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container customContainer">
             <div class="card my-2 shadow customCard">
@@ -106,8 +192,70 @@
                 </div>
             </div>
         </div>
+        <!-- Fim modal + card Pizza de Margherita -->
 
 
+        <!-- Início modal + card Camarão na Moranga -->
+        <div class="modal fade" id="modalCamaraoMoranga" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Camarão na Moranga</h4>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="accordion" id="receitaCamaraoMoranga">
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-hearder">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ingredientesCamaraoMoranga">
+                                        Ingredientes
+                                    </button>
+                                </h3>
+                                <div id="ingredientesCamaraoMoranga"
+                                    class="accordion-body accordion-collapse collapse show"
+                                    data-bs-parent="#receitaCamaraoMoranga">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-hearder">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#preparoCamaraoMoranga">
+                                        Modo de Preparo
+                                    </button>
+                                </h3>
+                                <div id="preparoCamaraoMoranga" class="accordion-body accordion-collapse collapse">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Amei a receita!</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container customContainer">
             <div class="card my-2 shadow customCard">
                 <img src="https://cdn2.storyasset.link/7IqpTP4VMIfCcCmDg3agwlHcBYB3/ms-jgutuzbhdd.jpg"
@@ -123,8 +271,9 @@
                 </div>
             </div>
         </div>
+        <!-- Fim modal + card Camarão na Moranga -->
 
-
+        <!-- Início modal + card Banana Split -->
         <div class="container customContainer">
             <div class="card my-2 shadow customCard">
                 <img src="https://media02.stockfood.com/largepreviews/MTk3ODU2NTc=/00638247-Banana-Split-in-a-Glass-dish-with-Strawberry-Vanilla-and-Chocolate-Ice-Cream.jpg"
@@ -140,8 +289,9 @@
                 </div>
             </div>
         </div>
+        <!-- Fim modal + card Banana Split -->
 
-
+        <!-- Início modal + card Pavê -->
         <div class="container customContainer">
             <div class="card my-2 shadow customCard">
                 <img src="https://images.aws.nestle.recipes/original/c50d834b3c662a5622ec41abfd8cb8d2_15_pave.png"
@@ -156,6 +306,7 @@
                 </div>
             </div>
         </div>
+        <!-- Fim modal + card Pavê -->
 
 
 
