@@ -72,16 +72,47 @@ Próximas implementações:
                                         Modo de Preparo
                                     </button>
                                 </h3>
-                                <div id="preparoSalmao" class="accordion-body accordion-collapse collapse">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
-                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
-                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
-                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
-                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
-                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
-                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                <div id="preparoSalmao" class="accordion-body accordion-collapse collapse"
+                                    data-bs-parent="#receitaSalmao">
+                                    <h3>1. Preparando o Salmão</h3>
+                                    <p> Comece retirando os filés de salmão da geladeira cerca de 15 minutos antes de
+                                        prepará-los, para que atinjam a temperatura ambiente. Isso ajuda a garantir um
+                                        cozimento mais uniforme.
+
+                                        Enxágue os filés de salmão sob água corrente e seque-os com toalhas de papel
+                                        para retirar o excesso de umidade.</p>
+
+                                    <h3>2. Temperando o Salmão</h3>
+                                    <p>
+                                        Em uma tigela pequena, misture o azeite de oliva, o suco de limão, o alho
+                                        picado, as ervas finas, o sal e a pimenta-do-reino. Mexa bem para que todos os
+                                        ingredientes se incorporem.
+                                        Passe a mistura de temperos sobre os filés de salmão, massageando levemente para
+                                        garantir que a marinada penetre na carne. Deixe o salmão descansar por cerca de
+                                        10 minutos enquanto o forno pré-aquece.</p>
+
+                                    <h3>3. Pré-aquecendo o Forno</h3>
+                                    <p>
+                                        Pré-aqueça o forno a 180°C (temperatura média). O salmão deve ser assado a uma
+                                        temperatura moderada para garantir que ele fique cozido de maneira uniforme e
+                                        não resseque.
+                                    </p>
+                                    <h3>4. Assando o Salmão</h3>
+                                    <p>
+                                        Coloque os filés de salmão temperados em uma assadeira untada com um pouco de
+                                        azeite ou forrada com papel manteiga. Se desejar, coloque algumas rodelas de
+                                        limão sobre os filés para dar um toque de sabor extra e decorativo.
+                                        Leve os filés ao forno e asse por cerca de 15 a 20 minutos. O tempo de forno
+                                        pode variar dependendo da espessura do filé, mas o salmão estará pronto quando a
+                                        carne se separar facilmente com um garfo e estiver opaca no centro. O salmão
+                                        deve ficar úmido e macio, nunca seco.
+                                    </p>
+
+                                    <h3>5. Finalizando o Prato</h3>
+                                    <p>Retire o salmão do forno e, se desejar, decore com salsinha ou cebolinha picada.
+                                        Sirva imediatamente, acompanhado de seus acompanhamentos favoritos, como arroz,
+                                        batatas assadas, legumes cozidos ou uma salada fresca.</p>
+
 
                                 </div>
                             </div>
@@ -188,7 +219,8 @@ Próximas implementações:
                     <p class="card-text">Aprenda a receita da melhor pizza de margherita em poucos minutos</p>
                 </div>
                 <div class="card-footer d-flex justify-content-end">
-                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalPizzaMargherita">Saiba mais</button>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalPizzaMargherita">Saiba
+                        mais</button>
                 </div>
             </div>
         </div>
@@ -232,7 +264,8 @@ Próximas implementações:
                                         Modo de Preparo
                                     </button>
                                 </h3>
-                                <div id="preparoCamaraoMoranga" class="accordion-body accordion-collapse collapse">
+                                <div id="preparoCamaraoMoranga" class="accordion-body accordion-collapse collapse"
+                                    data-bs-parent="#receitaCamaraoMoranga">
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
                                         nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
                                         aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
@@ -275,6 +308,68 @@ Próximas implementações:
         <!-- Fim modal + card Camarão na Moranga -->
 
         <!-- Início modal + card Banana Split -->
+        <div class="modal fade" id="modalBananaSplit" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Banana Split</h4>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="accordion" id="receitaBananaSplit">
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-hearder">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ingredientesBananaSplit">
+                                        Ingredientes
+                                    </button>
+                                </h3>
+                                <div id="ingredientesBananaSplit"
+                                    class="accordion-body accordion-collapse collapse show"
+                                    data-bs-parent="#receitaBananaSplit">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-hearder">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#preparoBananaSplit">
+                                        Modo de Preparo
+                                    </button>
+                                </h3>
+                                <div id="preparoBananaSplit" class="accordion-body accordion-collapse collapse"
+                                    data-bs-parent="#receitaBananaSplit">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Amei a receita!</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container customContainer">
             <div class="card my-2 shadow customCard">
                 <img src="https://media02.stockfood.com/largepreviews/MTk3ODU2NTc=/00638247-Banana-Split-in-a-Glass-dish-with-Strawberry-Vanilla-and-Chocolate-Ice-Cream.jpg"
@@ -285,7 +380,7 @@ Próximas implementações:
                     <p class="card-text">Aprenda a receita da melhor banana split em poucos minutos</p>
                 </div>
                 <div class="card-footer d-flex justify-content-end">
-                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalBanana">Saiba
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalBananaSplit">Saiba
                         mais</button>
                 </div>
             </div>
@@ -293,6 +388,67 @@ Próximas implementações:
         <!-- Fim modal + card Banana Split -->
 
         <!-- Início modal + card Pavê -->
+        <div class="modal fade" id="modalPave" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Pavê</h4>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="accordion" id="receitaPave">
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-hearder">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ingredientesPave">
+                                        Ingredientes
+                                    </button>
+                                </h3>
+                                <div id="ingredientesPave" class="accordion-body accordion-collapse collapse show"
+                                    data-bs-parent="#receitaPave">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-hearder">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#preparoPave">
+                                        Modo de Preparo
+                                    </button>
+                                </h3>
+                                <div id="preparoPave" class="accordion-body accordion-collapse collapse"
+                                    data-bs-parent="#receitaPave">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus incidunt beatae
+                                        nesciunt autem totam assumenda! Ratione necessitatibus officiis eaque vel
+                                        aliquid! Hic nisi, eaque perferendis ipsa commodi expedita. Ut, nihil.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="modal">Amei a receita!</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container customContainer">
             <div class="card my-2 shadow customCard">
                 <img src="https://images.aws.nestle.recipes/original/c50d834b3c662a5622ec41abfd8cb8d2_15_pave.png"
