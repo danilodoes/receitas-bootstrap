@@ -1,6 +1,7 @@
 # 🍽️ Página de Receitas - Projeto Prático com Bootstrap 5
 
 Este repositório apresenta uma **página web de receitas culinárias**, desenvolvida com o objetivo de praticar e aplicar conceitos fundamentais do **Bootstrap 5**. A aplicação agrupa diferentes receitas em **cards** interativos com suporte a **modais** e **accordions** para exibição detalhada de ingredientes e modo de preparo.
+[Confira!](https://danilodoes.github.io/receitas-bootstrap/)
 
 ---
 
@@ -38,7 +39,7 @@ Cada receita é exibida dentro de um componente `card` (`.card`, `.card-body`, `
 ### 🧱 Containers
 A estrutura geral é organizada com a classe `container` e `customContainer` (personalizada via CSS), permitindo alinhamento e responsividade com margens e preenchimentos consistentes.
 
-### 📦 Grid & Flexbox
+### 📦 Flexbox
 O agrupamento dos cards é realizado com `d-flex`, `flex-wrap`, `gap-2` e `justify-content-around`, criando uma disposição fluida e adaptável para múltiplos tamanhos de tela.
 
 ### 🧩 Accordions
